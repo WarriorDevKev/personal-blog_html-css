@@ -1,0 +1,74 @@
+@import "./styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: nav-menu;
+}
+
+.item3 {
+  grid-area: about-image;
+}
+
+.item4 {
+  grid-area: about-page;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.about__page__container {
+  grid-template-areas:
+    'header nav-menu'
+    'about-page about-image'
+    'footer footer';
+}
+
+.about__page {
+  border: 1px solid var(--lifted-crownz);
+  padding: 15px;
+  border-radius: 5px;
+  max-width: fit-content;
+  margin: 10px;
+}
+
+.about__page h1 {
+  font: Arial;
+  color: black;
+  font-size: 30px;
+}
+
+.about__page p {
+  font: Arial;
+  color: black;
+  font-size: 18px;
+}
+
+.about__image {
+  max-width: 75%;
+  max-height: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%
+}
+
+.footer {
+  position: relative;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-image {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}

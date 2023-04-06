@@ -104,10 +104,6 @@
   font-size: xx-small;
 }
 
-/* ############# SECTION
-   ############# 
-*/
-
 .social {
   display: flex;
   flex-direction: column;
@@ -120,27 +116,4 @@
   bottom: 0;
   width: 100%;
   text-align: center;
-}
-
-@media screen and (max-width: 768px){
-  .fend-study {
-    display: block;
-    max-width: fit-content;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .header-container {
-    display: block;
-  }
-
-  .nav-menu {
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .google-calendar {
-    max-width: 300px;
-  }
 }
